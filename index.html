@@ -17,21 +17,20 @@
   }
   .profile-circle {
     position: absolute;
-    top: 20px;
-    left: 20px;
-    width: 120px; /* Adjusted size of the circle */
-    height: 120px; /* Adjusted size of the circle */
+    top: calc(50% - 60px); /* Center vertically */
+    left: calc(50% - 60px); /* Center horizontally */
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     background-color: black;
     border: 5px solid white;
     overflow: hidden;
-    animation: rotate 10s linear infinite;
   }
   .profile-img {
-    width: 80%; /* Adjusted size of the icon */
-    height: 80%; /* Adjusted size of the icon */
+    width: 80%;
+    height: 80%;
     object-fit: cover;
-    transform: scale(1); /* Reset scale to 1 */
+    transform: scale(1);
   }
   .dot {
     position: absolute;
@@ -43,19 +42,11 @@
   }
   .text {
     font-family: 'Patua One', sans-serif;
-    font-size: 24px;
+    font-size: 29px; /* Increased font size */
     color: white;
     position: absolute;
-    top: 20px;
-    left: 160px; /* Adjusted position for the text */
-  }
-  @keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    top: calc(50% - 15px); /* Center vertically */
+    left: calc(50% + 70px); /* Position next to the circle */
   }
   @keyframes move {
     0% {
