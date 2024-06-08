@@ -33,16 +33,19 @@
 </style>
 </head>
 <body>
-  <!-- Generate 100 dots using JavaScript -->
   <script>
-    const numberOfDots = 100;
-    for (let i = 0; i < numberOfDots; i++) {
+    const generateDot = () => {
       const dot = document.createElement('div');
       dot.className = 'dot';
       dot.style.top = `${Math.random() * 100}vh`;
       dot.style.left = `${Math.random() * 100}vw`;
       document.body.appendChild(dot);
-    }
+      setTimeout(() => {
+        dot.remove();
+      }, 10000); // Remove dot after 10 seconds
+    };
+
+    const generateDotsInterval = setInterval(generateDot, 500); // Generate dot every 0.5 seconds
   </script>
 </body>
 </html>
