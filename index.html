@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>GitHub Page</title>
+<link href="https://fonts.googleapis.com/css2?family=Patua+One&display=swap" rel="stylesheet">
 <style>
   body {
     background-color: black;
@@ -18,8 +19,8 @@
     position: absolute;
     top: 20px;
     left: 20px;
-    width: 100px; /* Keep the circle size the same */
-    height: 100px; /* Keep the circle size the same */
+    width: 120px; /* Adjusted size of the circle */
+    height: 120px; /* Adjusted size of the circle */
     border-radius: 50%;
     background-color: black;
     border: 5px solid white;
@@ -27,8 +28,8 @@
     animation: rotate 10s linear infinite;
   }
   .profile-img {
-    width: 60%; /* Adjusted size of the icon */
-    height: 60%; /* Adjusted size of the icon */
+    width: 80%; /* Adjusted size of the icon */
+    height: 80%; /* Adjusted size of the icon */
     object-fit: cover;
     transform: scale(1); /* Reset scale to 1 */
   }
@@ -39,6 +40,14 @@
     background-color: white;
     border-radius: 50%;
     animation: move 10s linear infinite;
+  }
+  .text {
+    font-family: 'Patua One', sans-serif;
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 160px; /* Adjusted position for the text */
   }
   @keyframes rotate {
     from {
@@ -62,6 +71,7 @@
   <div class="profile-circle">
     <img src="profileicon.png" alt="Profile Icon" class="profile-img">
   </div>
+  <div class="text">KnownAsTelly</div>
   
   <script>
     const generateDot = () => {
